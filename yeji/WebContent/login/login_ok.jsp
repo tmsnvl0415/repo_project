@@ -17,7 +17,7 @@
 			session.setAttribute("id",loginOk.getId());
 			session.setAttribute("name", loginOk.getName());
 			msg = loginOk.getName()+"님 로그인 되었습니다.";
-			uri = request.getContextPath()+"/main/main.jsp";
+			uri = request.getContextPath()+"/main/top.jsp";
 		}else if (result == LoginCheck.NOT_ID){
 			msg = "아이디가 없습니다. 다시 확인해 보세요!!";
 			uri = request.getContextPath()+"/login/login.jsp";
