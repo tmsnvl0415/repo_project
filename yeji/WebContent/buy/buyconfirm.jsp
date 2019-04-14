@@ -91,7 +91,7 @@
 	int n3 = ps3.executeUpdate();
 	}
 	String msg = null;
-	String uri = "../main/main.jsp";
+	String uri = "../main/top.jsp";
 	if(n>0 && n2>0){
 		msg="결제 성공!! 회원 마일리지 5% 적립되었습니다.";
 	}
