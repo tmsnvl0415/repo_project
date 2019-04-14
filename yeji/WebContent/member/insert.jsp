@@ -50,7 +50,7 @@
 	
 	if(n>0){
 		msg="회원가입 성공!!";
-		uri ="request.getContextPath()/main/main.jsp";
+		uri ="request.getContextPath()/main/top.jsp";
 	}else{
 		msg="회원가입 실패!! ";
 		uri = "request.getContextPath()/student1/student.jsp";

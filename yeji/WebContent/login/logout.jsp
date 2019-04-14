@@ -8,5 +8,5 @@
 %>
 <script type="text/javascript">
 	alert("정상적으로 로그아웃 되었습니다.");
-	location.href ="<%=request.getContextPath()%>/main/main.jsp";
+	location.href ="<%=request.getContextPath()%>/main/top.jsp";
 </script>

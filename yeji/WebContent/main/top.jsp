@@ -29,6 +29,8 @@ function openWinS(){
 
 
 	</script>
+	
+	
 <%
 	String mbId = (String)session.getAttribute("id");
 	String mbName = (String)session.getAttribute("name");
@@ -41,7 +43,10 @@ function openWinS(){
 		if(mbId.equals("root"))
 			rootLogin = true;
 	}
+	
+	
 %>
+
 
 <body>
 	<div align ="center">
