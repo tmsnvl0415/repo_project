@@ -20,57 +20,57 @@ USE `project`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `±¸ÀÔ³»¿ª`
+-- Table structure for table `ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½`
 --
 
-DROP TABLE IF EXISTS `±¸ÀÔ³»¿ª`;
+DROP TABLE IF EXISTS `ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `±¸ÀÔ³»¿ª` (
-  `ÀºÇà¸í` varchar(30) DEFAULT NULL,
-  `ÀÔ±ÝÀÚ` varchar(20) DEFAULT NULL,
-  `ÀÔ±Ý±Ý¾×` int(11) DEFAULT NULL,
-  `ÀÔ±ÝÀÏÀÚ` date DEFAULT NULL,
-  `È¸¿øID` varchar(45) DEFAULT NULL,
-  `Ã¥ÀÌ¸§` varchar(45) NOT NULL,
-  PRIMARY KEY (`Ã¥ÀÌ¸§`)
+CREATE TABLE `ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½` (
+  `ï¿½ï¿½ï¿½ï¿½ï¿½` varchar(30) DEFAULT NULL,
+  `ï¿½Ô±ï¿½ï¿½ï¿½` varchar(20) DEFAULT NULL,
+  `ï¿½Ô±Ý±Ý¾ï¿½` int(11) DEFAULT NULL,
+  `ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½` date DEFAULT NULL,
+  `È¸ï¿½ï¿½ID` varchar(45) DEFAULT NULL,
+  `Ã¥ï¿½Ì¸ï¿½` varchar(45) NOT NULL,
+  PRIMARY KEY (`Ã¥ï¿½Ì¸ï¿½`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `±¸ÀÔ³»¿ª`
+-- Dumping data for table `ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½`
 --
 
-LOCK TABLES `±¸ÀÔ³»¿ª` WRITE;
-/*!40000 ALTER TABLE `±¸ÀÔ³»¿ª` DISABLE KEYS */;
-INSERT INTO `±¸ÀÔ³»¿ª` VALUES ('±¹¹ÎÀºÇà','±è¿¹Áö',17750,'2018-06-02','yeji111','C ÇÁ·Î±×·¡¹Ö');
-/*!40000 ALTER TABLE `±¸ÀÔ³»¿ª` ENABLE KEYS */;
+LOCK TABLES `ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½` WRITE;
+/*!40000 ALTER TABLE `ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½` DISABLE KEYS */;
+INSERT INTO `ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½` VALUES ('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½è¿¹ï¿½ï¿½',17750,'2018-06-02','yeji111','C ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½');
+/*!40000 ALTER TABLE `ï¿½ï¿½ï¿½Ô³ï¿½ï¿½ï¿½` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `ºñÈ¸¿ø`
+-- Table structure for table `ï¿½ï¿½È¸ï¿½ï¿½`
 --
 
-DROP TABLE IF EXISTS `ºñÈ¸¿ø`;
+DROP TABLE IF EXISTS `ï¿½ï¿½È¸ï¿½ï¿½`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `ºñÈ¸¿ø` (
-  `ÀÌ¸§` varchar(10) DEFAULT NULL,
-  `ÁÖ¹Î¹øÈ£` varchar(14) NOT NULL DEFAULT '',
-  `ÈÞ´ëÆù¹øÈ£` varchar(13) DEFAULT NULL,
-  `ÀÌ¸ÞÀÏ` varchar(30) DEFAULT NULL,
-  `ÁÖ¼Ò` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`ÁÖ¹Î¹øÈ£`)
+CREATE TABLE `ï¿½ï¿½È¸ï¿½ï¿½` (
+  `ï¿½Ì¸ï¿½` varchar(10) DEFAULT NULL,
+  `ï¿½Ö¹Î¹ï¿½È£` varchar(14) NOT NULL DEFAULT '',
+  `ï¿½Þ´ï¿½ï¿½ï¿½ï¿½ï¿½È£` varchar(13) DEFAULT NULL,
+  `ï¿½Ì¸ï¿½ï¿½ï¿½` varchar(30) DEFAULT NULL,
+  `ï¿½Ö¼ï¿½` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`ï¿½Ö¹Î¹ï¿½È£`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `ºñÈ¸¿ø`
+-- Dumping data for table `ï¿½ï¿½È¸ï¿½ï¿½`
 --
 
-LOCK TABLES `ºñÈ¸¿ø` WRITE;
-/*!40000 ALTER TABLE `ºñÈ¸¿ø` DISABLE KEYS */;
-/*!40000 ALTER TABLE `ºñÈ¸¿ø` ENABLE KEYS */;
+LOCK TABLES `ï¿½ï¿½È¸ï¿½ï¿½` WRITE;
+/*!40000 ALTER TABLE `ï¿½ï¿½È¸ï¿½ï¿½` DISABLE KEYS */;
+/*!40000 ALTER TABLE `ï¿½ï¿½È¸ï¿½ï¿½` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -81,13 +81,13 @@ DROP TABLE IF EXISTS `Ã¥`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Ã¥` (
-  `Ã¥ÀÌ¸§` varchar(30) NOT NULL,
-  `ÀúÀÚ` varchar(45) DEFAULT NULL,
-  `ÃâÆÇ»ç` varchar(30) DEFAULT NULL,
-  `°¡°Ý` int(11) DEFAULT NULL,
-  `ÃâÆÇÀÏ` date DEFAULT NULL,
-  `ºÐ·ù` varchar(10) DEFAULT NULL,
-  PRIMARY KEY (`Ã¥ÀÌ¸§`)
+  `Ã¥ï¿½Ì¸ï¿½` varchar(30) NOT NULL,
+  `ï¿½ï¿½ï¿½ï¿½` varchar(45) DEFAULT NULL,
+  `ï¿½ï¿½ï¿½Ç»ï¿½` varchar(30) DEFAULT NULL,
+  `ï¿½ï¿½ï¿½ï¿½` int(11) DEFAULT NULL,
+  `ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½` date DEFAULT NULL,
+  `ï¿½Ð·ï¿½` varchar(10) DEFAULT NULL,
+  PRIMARY KEY (`Ã¥ï¿½Ì¸ï¿½`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -98,57 +98,57 @@ CREATE TABLE `Ã¥` (
 LOCK TABLES `Ã¥` WRITE;
 /*!40000 ALTER TABLE `Ã¥` DISABLE KEYS */;
 INSERT INTO `Ã¥` VALUES 
-('3Äí¼Ç ÆÐÅÏ 100','±èµ¿È¯','ºÏÄÚ¸®¾Æ',18000,'2014-01-04','½ºÆ÷Ã÷'),
-('C ÇÁ·Î±×·¡¹Ö','À±¼º¿ì','¿À·»Áö¹Ìµð¾î',18750,'2010-11-01','°øÇÐ'),
-('Why Jesus','Á¶Á¤¹Î','µÎ¶õ³ë¼­¿ø',11700,'2014-02-27','Á¾±³'),
-('°¨Á¤¼ö¾÷','°­½ÅÁÖ','¹ÎÀ½»ç',17550,'2013-11-20','ÀÎ¹®'),
-('°áÈ¥Àº ¿î¸íÀÌ´Ù','ÀÌÁö¿¬','°¨',21600,'2014-05-30','¼Ò¼³'),
-('´ëÅë·ÉÀÇ ±Û¾²±â','°­¿ø±¹','¸ÞµðÄ¡¹Ìµð¾î',12640,'2014-02-25','ÀÎ¹®'),
-('¸®¹ö½Ì ÇÙ½É ¿ø¸®','ÀÌ½Â¿ø','ÀÎ»çÀÌÆ®',40800,'2012-09-30','°øÇÐ'),
-('¸° ½ºÅ¸Æ®¾÷','ÀÌÃ¢¼ö','ÀÎ»çÀÌÆ®',15300,'2012-11-12','°øÇÐ'),
-('¸¶ÇÐ','±èº´¼±','´ëÇÑ¹Ìµð¾î',22500,'2012-09-10','½ºÆ÷Ã÷'),
-('¸ÞÀÌÀú¸®±× °¡ÀÌµå','¼ÕÇõ','¾Ë¿¡ÀÌÄ¡',11200,'2014-04-30','½ºÆ÷Ã÷'),
-('º°¾È°£ ¾Æ¾¾','¼­ÀÚ¿µ','°íÁî³Ë',19800,'2014-05-25','¼Ò¼³'),
-('º¸½Ã±â¿¡ ÁÁ¾Ò´õ¶ó','±è¾çÀç','µÎ¶õ³ë¼­¿ø',11700,'2014-05-19','Á¾±³'),
-('º¸Çì¹Ì¾È ·¦¼Òµð','Á¤Àç¹Î','³ª¹«¿·ÀÇÀÚ',11700,'2014-06-13','¼Ò¼³'),
-('¼ûÀº ±æ Ã£±â','ÀÌ±ÝÀÌ','Çª¸¥Ã¥µé',11250,'2014-05-30','¼Ò¼³'),
-('½º´ÔÀÇ ÁÖ·Ê»ç','¹ý·û','ÈÞ',7560,'2010-09-13','Á¾±³'),
-('¿©´ü ´Ü¾î','¹Ú¿õÇö','ºÏÇÏ¿ì½º',13500,'2013-05-20','ÀÎ¹®'),
-('ÀÌ¹ÌÁö ÀÎ¹®ÇÐ','ÁøÁß±Ç','ÃÅ³âÀÇ»ó»ó',15300,'2014-06-20','ÀÎ¹®'),
-('ÀÎ»ý¼ö¾÷','¹ý·û','ÈÞ',11700,'2013-10-09','Á¾±³'),
-('Ãà±¸ Àü¼ú 70','±èÁ¤È¯','ÇÑ½º¹Ìµð¾î',10800,'2012-10-22','½ºÆ÷Ã÷'),
-('ÆÐÅÏ ÀÎ½Ä','¿ÀÀÏ¼®','±³º¸¹®°í',25000,'2008-08-20','°øÇÐ');
+('3ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ 100','ï¿½èµ¿È¯','ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½',18000,'2014-01-04','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'),
+('C ï¿½ï¿½ï¿½Î±×·ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ï¿½',18750,'2010-11-01','ï¿½ï¿½ï¿½ï¿½'),
+('Why Jesus','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½Î¶ï¿½ï¿½ë¼­ï¿½ï¿½',11700,'2014-02-27','ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',17550,'2013-11-20','ï¿½Î¹ï¿½'),
+('ï¿½ï¿½È¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Ì´ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½',21600,'2014-05-30','ï¿½Ò¼ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¾ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½Þµï¿½Ä¡ï¿½Ìµï¿½ï¿½',12640,'2014-02-25','ï¿½Î¹ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ù½ï¿½ ï¿½ï¿½ï¿½ï¿½','ï¿½Ì½Â¿ï¿½','ï¿½Î»ï¿½ï¿½ï¿½Æ®',40800,'2012-09-30','ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½ï¿½ ï¿½ï¿½Å¸Æ®ï¿½ï¿½','ï¿½ï¿½Ã¢ï¿½ï¿½','ï¿½Î»ï¿½ï¿½ï¿½Æ®',15300,'2012-11-12','ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½','ï¿½èº´ï¿½ï¿½','ï¿½ï¿½ï¿½Ñ¹Ìµï¿½ï¿½',22500,'2012-09-10','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½Ìµï¿½','ï¿½ï¿½ï¿½ï¿½','ï¿½Ë¿ï¿½ï¿½ï¿½Ä¡',11200,'2014-04-30','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½ï¿½ï¿½È°ï¿½ ï¿½Æ¾ï¿½','ï¿½ï¿½ï¿½Ú¿ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½',19800,'2014-05-25','ï¿½Ò¼ï¿½'),
+('ï¿½ï¿½ï¿½Ã±â¿¡ ï¿½ï¿½ï¿½Ò´ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½Î¶ï¿½ï¿½ë¼­ï¿½ï¿½',11700,'2014-05-19','ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½Ì¾ï¿½ ï¿½ï¿½ï¿½Òµï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',11700,'2014-06-13','ï¿½Ò¼ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ Ã£ï¿½ï¿½','ï¿½Ì±ï¿½ï¿½ï¿½','Çªï¿½ï¿½Ã¥ï¿½ï¿½',11250,'2014-05-30','ï¿½Ò¼ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ö·Ê»ï¿½','ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½',7560,'2010-09-13','ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½ ï¿½Ü¾ï¿½','ï¿½Ú¿ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½Ï¿ì½º',13500,'2013-05-20','ï¿½Î¹ï¿½'),
+('ï¿½Ì¹ï¿½ï¿½ï¿½ ï¿½Î¹ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ß±ï¿½','ï¿½Å³ï¿½ï¿½Ç»ï¿½ï¿½',15300,'2014-06-20','ï¿½Î¹ï¿½'),
+('ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½ï¿½ï¿½','ï¿½ï¿½',11700,'2013-10-09','ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½à±¸ ï¿½ï¿½ï¿½ï¿½ 70','ï¿½ï¿½ï¿½ï¿½È¯','ï¿½Ñ½ï¿½ï¿½Ìµï¿½ï¿½',10800,'2012-10-22','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½'),
+('ï¿½ï¿½ï¿½ï¿½ ï¿½Î½ï¿½','ï¿½ï¿½ï¿½Ï¼ï¿½','ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',25000,'2008-08-20','ï¿½ï¿½ï¿½ï¿½');
 /*!40000 ALTER TABLE `Ã¥` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `È¸¿ø`
+-- Table structure for table `È¸ï¿½ï¿½`
 --
 
-DROP TABLE IF EXISTS `È¸¿ø`;
+DROP TABLE IF EXISTS `È¸ï¿½ï¿½`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `È¸¿ø` (
-  `ÀÌ¸§` varchar(10) DEFAULT NULL,
-  `È¸¿øID` varchar(20) NOT NULL,
-  `ºñ¹Ð¹øÈ£` varchar(12) DEFAULT NULL,
-  `ÁÖ¹Îµî·Ï¹øÈ£` varchar(14) DEFAULT NULL,
-  `ÈÞ´ëÆù¹øÈ£` varchar(13) DEFAULT NULL,
-  `ÀÌ¸ÞÀÏ` varchar(30) DEFAULT NULL,
-  `ÁÖ¼Ò` varchar(50) DEFAULT NULL,
-  `¸¶ÀÏ¸®Áö` int(11) DEFAULT NULL,
-  PRIMARY KEY (`È¸¿øID`)
+CREATE TABLE `È¸ï¿½ï¿½` (
+  `ï¿½Ì¸ï¿½` varchar(10) DEFAULT NULL,
+  `È¸ï¿½ï¿½ID` varchar(20) NOT NULL,
+  `ï¿½ï¿½Ð¹ï¿½È£` varchar(12) DEFAULT NULL,
+  `ï¿½Ö¹Îµï¿½Ï¹ï¿½È£` varchar(14) DEFAULT NULL,
+  `ï¿½Þ´ï¿½ï¿½ï¿½ï¿½ï¿½È£` varchar(13) DEFAULT NULL,
+  `ï¿½Ì¸ï¿½ï¿½ï¿½` varchar(30) DEFAULT NULL,
+  `ï¿½Ö¼ï¿½` varchar(50) DEFAULT NULL,
+  `ï¿½ï¿½ï¿½Ï¸ï¿½ï¿½ï¿½` int(11) DEFAULT NULL,
+  PRIMARY KEY (`È¸ï¿½ï¿½ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `È¸¿ø`
+-- Dumping data for table `È¸ï¿½ï¿½`
 --
 
-LOCK TABLES `È¸¿ø` WRITE;
-/*!40000 ALTER TABLE `È¸¿ø` DISABLE KEYS */;
-INSERT INTO `È¸¿ø` VALUES ('±è¿¹Áö','yeji111','ghfkddl1','910','1','1','1',1000);
-/*!40000 ALTER TABLE `È¸¿ø` ENABLE KEYS */;
+LOCK TABLES `È¸ï¿½ï¿½` WRITE;
+/*!40000 ALTER TABLE `È¸ï¿½ï¿½` DISABLE KEYS */;
+INSERT INTO `È¸ï¿½ï¿½` VALUES ('ï¿½è¿¹ï¿½ï¿½','yeji111','ghfkddl1','910','1','1','1',1000);
+/*!40000 ALTER TABLE `È¸ï¿½ï¿½` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
