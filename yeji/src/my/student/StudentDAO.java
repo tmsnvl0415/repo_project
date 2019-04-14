@@ -14,8 +14,8 @@ public class StudentDAO {
 		}catch(ClassNotFoundException e){
 			e.printStackTrace();
 		}
-		url = "jdbc:mysql://127.0.0.1:3307/project";
-		user = "root"; pass="1180";
+		url = "jdbc:mysql://127.0.0.1:3306/project";
+		user = "root"; pass="yeji1123";
 	}
 	public int insertStudent(String id, String name, String cname)
 																	throws SQLException {
