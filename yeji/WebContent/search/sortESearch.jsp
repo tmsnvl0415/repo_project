@@ -44,7 +44,7 @@
 	<div align="center">
 		<hr color="green" width="300">
 		<h2>검 색 결 과 보 기</h2>
-	<li><a href="../main/main.jsp">홈페이지</a></li>
+	<li><a href="../main/top.jsp">홈페이지</a></li>
 		<hr color="green" width="300">
 
 		<div align ="center">
