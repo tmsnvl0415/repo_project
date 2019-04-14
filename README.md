@@ -1,7 +1,7 @@
 # repo_project
---------------------
+
 mysql query
---------------------
+
 CREATE DATABASE  IF NOT EXISTS `project` /*!40100 DEFAULT CHARACTER SET utf8 */;
 USE `project`;
 -- MySQL dump 10.13  Distrib 5.6.13, for Win32 (x86)
@@ -149,7 +149,7 @@ CREATE TABLE `회원` (
 
 LOCK TABLES `회원` WRITE;
 /*!40000 ALTER TABLE `회원` DISABLE KEYS */;
-INSERT INTO `회원` VALUES ('이상엽','sangyup515','ghfkddl1','910','1','1','1',1000);
+INSERT INTO `회원` VALUES ('김예지','yeji111','ghfkddl1','910','1','1','1',1000);
 /*!40000 ALTER TABLE `회원` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
