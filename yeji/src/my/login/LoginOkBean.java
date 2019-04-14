@@ -1,7 +1,8 @@
+
 package my.login;
 import my.db.*;
 import java.sql.*;
-//·Î±×ÀÎ¿¡ ¼º°øÇÏ¸é ÇØ´çµÇ´Â »ç¶÷ÀÇ Á¤º¸¸¦ ·Î±×ÀÎ µ¿¾È¸¸ À¯Áö½ÃÄÑÁØ´Ù
+//ë¡œê·¸ì¸ì— ì„±ê³µí•˜ë©´ í•´ë‹¹ë˜ëŠ” ì‚¬ëŒì˜ ì •ë³´ë¥¼ ë¡œê·¸ì¸ ë™ì•ˆë§Œ ìœ ì§€ì‹œì¼œì¤€ë‹¤
 public class LoginOkBean {
 	private String name;
 	private String id;
@@ -24,7 +25,7 @@ public class LoginOkBean {
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		String sql = "select * from È¸¿ø where È¸¿øID=?";
+		String sql = "select * from íšŒì› where íšŒì›ID=?";
 		try{
 			con = pool.getConnection();
 			ps = con.prepareStatement(sql);

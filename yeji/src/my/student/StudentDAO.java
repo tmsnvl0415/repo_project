@@ -19,7 +19,7 @@ public class StudentDAO {
 	}
 	public int insertStudent(String id, String name, String cname)
 																	throws SQLException {
-		String sql = "insert into È¸¿ø values(?,?,?)";
+		String sql = "insert into íšŒì› values(?,?,?)";
 		try{				
 			con = DriverManager.getConnection(url, user, pass);
 			ps = con.prepareStatement(sql);
@@ -34,7 +34,7 @@ public class StudentDAO {
 		}
 	}
 	public StudentDTO[] listStudent() throws SQLException{
-		String sql = "select * from È¸¿ø";
+		String sql = "select * from íšŒì›";
 		try{
 			con = DriverManager.getConnection(url, user, pass);
 			ps = con.prepareStatement(sql);
@@ -61,7 +61,7 @@ public class StudentDAO {
 		return stdto;
 	}
 	public int deleteMember(String id) throws SQLException{
-		String sql = "delete from È¸¿ø where È¸¿øID=?";
+		String sql = "delete from íšŒì› where íšŒì›ID=?";
 		if(!(id=="root" || id.trim().equals("root"))){
 		try{
 			con = DriverManager.getConnection(url, user, pass);
@@ -78,7 +78,7 @@ public class StudentDAO {
 			return 0;
 	}
 	public int deleteBook(String bName) throws SQLException{
-		String sql = "delete from Ã¥ where Ã¥ÀÌ¸§=?";
+		String sql = "delete from ì±… where ì±…ì´ë¦„=?";
 		try{
 			con = DriverManager.getConnection(url, user, pass);
 			ps = con.prepareStatement(sql);

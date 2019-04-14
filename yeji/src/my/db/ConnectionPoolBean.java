@@ -5,12 +5,12 @@ import java.sql.*;
 import java.util.*;
 public class ConnectionPoolBean {
 	private String url, user, pw;
-	private Hashtable<Connection, Boolean> ht;//pool�� �����
-	private int increment;//pool�忡 con��ü�� �� �Է�������Ҷ� �� ũ��
+	private Hashtable<Connection, Boolean> ht;//pool장 만들기
+	private int increment;//pool장에 con객체를 더 입력해줘야할때 그 크기
 	
 	public ConnectionPoolBean() throws ClassNotFoundException, SQLException {
-		increment = 3;//pool�忡 con��ü�� �� �ʿ��ϸ� 3�� ���� ��Ű�� ����
-		ht = new Hashtable<Connection, Boolean>(5);//pool�忡 5���� ��ü�� �ֱ� ����
+		increment = 3;//pool장에 con객체가 더 필요하면 3개 증가 시키기 위해
+		ht = new Hashtable<Connection, Boolean>(5);//pool장에 5개의 객체를 넣기 위해
 		url = "jdbc:mysql://127.0.0.1:3306/project";
 		user = "root";
 		pw = "yeji1123";
@@ -18,7 +18,7 @@ public class ConnectionPoolBean {
 		
 		for(int i=0; i<5; ++i){
 			Connection con = DriverManager.getConnection(url, user, pw);
-			ht.put(con, Boolean.FALSE);//��� con��ü�� ����
+			ht.put(con, Boolean.FALSE);//노는 con객체를 생성
 		}
 	}
 	
@@ -54,7 +54,7 @@ public class ConnectionPoolBean {
 	}
 	
 	public void removeCon() throws SQLException {
-		int count = 0;//��� ��ü ���� ī��Ʈ
+		int count = 0;//노는 객체 숫자 카운트
 		Connection con = null;
 		Enumeration<Connection> enkey = ht.keys();
 		while(enkey.hasMoreElements()){

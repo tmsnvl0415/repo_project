@@ -37,7 +37,7 @@
 			bank.trim().equals("") || conuser.trim().equals("") || money.trim().equals(""))
 	{%>
 		<script type ="text/javascript">
-			alert("모든 데이타를 입력하셔야 합니다.");
+			alert("모든 데이터를 입력하셔야 합니다.");
 			history.back();
 		</script>
 <% 		return;

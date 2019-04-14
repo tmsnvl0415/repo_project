@@ -1,24 +1,24 @@
 package my.login;
 import my.db.*;
 import java.sql.*;
-//¿¦ºê¶ó¿ìÀú¿¡¼­ ³Ñ¾î¿Â ¾ÆÀÌµğ, ºñ¹Ğ¹øÈ£¿Í DB¿¡ ÀúÀåµÈ ¾ÆÀÌµğ, ºñ¹Ğ¹øÈ£°¡
-//¼­·Î ÀÏÄ¡ÇÏ´ÂÁö ¿©ºÎ¸¦ Ã¼Å©ÇÏ´Â ºóÀ» ¸¸µéÀÚ
+//ì—¡ë¸Œë¼ìš°ì €ì—ì„œ ë„˜ì–´ì˜¨ ì•„ì´ë””, ë¹„ë°€ë²ˆí˜¸ì™€ DBì— ì €ì¥ëœ ì•„ì´ë””, ë¹„ë°€ë²ˆí˜¸ê°€
+//ì„œë¡œ ì¼ì¹˜í•˜ëŠ”ì§€ ì—¬ë¶€ë¥¼ ì²´í¬í•˜ëŠ” ë¹ˆì„ ë§Œë“¤ì
 public class LoginCheck {
-	//¹İÈ¯µÉ °ªÀ» »ó¼ö·Î ¼±¾ğ
-	public static final int OK=1;			//id¿Í pwd°¡ ÀÏÄ¡ÇÏ´Â °æ¿ì
-	public static final int NOT_ID=2;		//id°¡ ¾ø´Â °æ¿ì
-	public static final int NOT_PWD=3;	//id´Â ÀÖ´Âµ¥ pwd°¡ ÀÏÄ¡ÇÏÁö ¾Ê´Â °æ¿ì
-	public static final int ERROR=-1;		//SQLExceptionÀÌ ¹ß»ıÇÑ °æ¿ì
+	//ë°˜í™˜ë  ê°’ì„ ìƒìˆ˜ë¡œ ì„ ì–¸
+	public static final int OK=1;			//idì™€ pwdê°€ ì¼ì¹˜í•˜ëŠ” ê²½ìš°
+	public static final int NOT_ID=2;		//idê°€ ì—†ëŠ” ê²½ìš°
+	public static final int NOT_PWD=3;	//idëŠ” ìˆëŠ”ë° pwdê°€ ì¼ì¹˜í•˜ì§€ ì•ŠëŠ” ê²½ìš°
+	public static final int ERROR=-1;		//SQLExceptionì´ ë°œìƒí•œ ê²½ìš°
 	
-	//propertyÇÏ±â À§ÇÑ º¯¼ö¼±¾ğ
+	//propertyí•˜ê¸° ìœ„í•œ ë³€ìˆ˜ì„ ì–¸
 	private String id;
 	private String pw;
 	private ConnectionPoolBean pool;
 	
-	//µğÆúÆ®»ı¼ºÀÚ¸¦ ¸í½ÃÇØÁÖÀÚ.
+	//ë””í´íŠ¸ìƒì„±ìë¥¼ ëª…ì‹œí•´ì£¼ì.
 	public LoginCheck(){}
 
-	//propertyÇÏ±â À§ÇØ setter, getter¸Ş¼Òµå¸¦ ¼³Á¤
+	//propertyí•˜ê¸° ìœ„í•´ setter, getterë©”ì†Œë“œë¥¼ ì„¤ì •
 	public String getId() {
 		return id;
 	}
@@ -38,12 +38,12 @@ public class LoginCheck {
 		this.pool = pool;
 	}
 	
-	//ºñÁö´Ï½º ¸Ş¼Òµå¸¦ ÀÌ¿ëÇÏ¿© °ªÀ» ¹İÈ¯ÇØ ÁÖÀÚ.
+	//ë¹„ì§€ë‹ˆìŠ¤ ë©”ì†Œë“œë¥¼ ì´ìš©í•˜ì—¬ ê°’ì„ ë°˜í™˜í•´ ì£¼ì.
 	public int memberCheck(){
 		Connection con = null;
 		PreparedStatement ps = null;
 		ResultSet rs = null;
-		String sql = "select ºñ¹Ğ¹øÈ£ from È¸¿ø where È¸¿øID=?";
+		String sql = "select ë¹„ë°€ë²ˆí˜¸ from íšŒì› where íšŒì›ID=?";
 		try{
 			con = pool.getConnection();
 			ps = con.prepareStatement(sql);
@@ -58,7 +58,7 @@ public class LoginCheck {
 				return NOT_PWD;
 			}
 		}catch(SQLException e){
-			System.out.println("¿À·ù¹ß»ı : " + e.getMessage());
+			System.out.println("ì˜¤ë¥˜ë°œìƒ : " + e.getMessage());
 			return ERROR;
 		}finally{
 			if (rs != null) try{rs.close();}catch(SQLException e){}
